@@ -8,4 +8,9 @@ This also works for a schematic that contains one. The block stays on the vent w
 
 ![Vent Snap with a schematic](https://raw.githubusercontent.com/m3rcur1e/vent-snap/media/vent-snap-schematic.webp)
 
-**Settings › Vent Snap** (or **Cur1e Mods**) has an on/off switch and the snap radius (2–10 tiles).
+### Customizable
+
+In **Settings › Vent Snap** (or **Cur1e Mods**):
+
+- snapping on/off
+- snap radius (2–10 tiles)
