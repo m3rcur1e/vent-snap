@@ -1,0 +1,7 @@
+name: vent-snap
+displayName: Vent Snap
+author: m3rcur1e
+version: "1.0.0"
+minGameVersion: "160"
+hidden: true
+description: "Turbine condensers and vent condensers snap onto steam vents. Hold one (or a schematic with one) near a vent and the placement preview jumps onto it; rotating or flipping the schematic keeps it there. Can be switched off in Settings."
