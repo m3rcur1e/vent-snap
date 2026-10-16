@@ -16,6 +16,10 @@ function enabled(){
     return Core.settings.getBool(PREF_ON, true);
 }
 
+function active(){
+    return enabled() && !Core.input.keyDown(KeyCode.controlLeft) && !Core.input.keyDown(KeyCode.controlRight);
+}
+
 function radius(){
     return Mathf.clamp(Core.settings.getInt(PREF_RADIUS, RADIUS_DEFAULT), RADIUS_MIN, RADIUS_MAX);
 }
@@ -176,7 +180,7 @@ function update(){
         forget();
         return;
     }
-    if(!enabled()){
+    if(!active()){
         standDown(inp);
         return;
     }
@@ -261,14 +265,14 @@ function suppressQuickRotate(){
 function beforeInput(){
     if(keyFirst == null) return;
     const inp = desktop();
-    if(inp == null || !enabled()) return;
+    if(inp == null || !active()) return;
     unsnap(inp);
     if(!inp.selectPlans.isEmpty()) suppressQuickRotate();
 }
 
 function press(){
     const inp = desktop();
-    if(inp == null || !enabled() || Core.scene.hasMouse() || Core.scene.hasField()) return;
+    if(inp == null || !active() || Core.scene.hasMouse() || Core.scene.hasField()) return;
     if(java.lang.System.getProperty(GRID_PROP) == "1") return;
     if(!inp.selectPlans.isEmpty()){
         unsnap(inp);

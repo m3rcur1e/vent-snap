@@ -4,7 +4,7 @@ Turbine condensers and vent condensers snap onto steam vents. Hold one near a ve
 
 ![Vent Snap](https://raw.githubusercontent.com/m3rcur1e/vent-snap/media/vent-snap.webp)
 
-This also works for a schematic that contains one. The block stays on the vent when you rotate the schematic.
+This also works for a schematic that contains one. The block stays on the vent when you rotate the schematic. Hold **Ctrl** to place it freely, without snapping.
 
 ![Vent Snap with a schematic](https://raw.githubusercontent.com/m3rcur1e/vent-snap/media/vent-snap-schematic.webp)
 
